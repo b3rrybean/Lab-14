@@ -20,7 +20,12 @@ public:
     int getBlue()           { return blue; }
 
     // Print method
-    void print();
+    void print() {
+        cout << "Color: " << endl;
+        cout << "R= " << red << " "
+             << "G= " << green << " "
+             << "B= " << blue << endl;
+    }
 };
 
 int main() {
@@ -29,6 +34,21 @@ int main() {
     Color color3;
 
     // Set values
+    color1.setRed(255);
+    color1.setGreen(0);
+    color1.setBlue(0);
 
+    color2.setRed(0);
+    color2.setGreen(255);
+    color2.setBlue(0);
+
+    color3.setRed(0);
+    color3.setGreen(0);
+    color3.setBlue(255);
+
+    // Print calls
+    color1.print();
+    color2.print();
+    color3.print();
     return 0;
 }
