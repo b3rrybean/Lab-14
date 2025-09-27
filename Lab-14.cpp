@@ -22,9 +22,9 @@ public:
     // Print method
     void print() {
         cout << "Color: " << endl;
-        cout << "R= " << red << " "
-             << "G= " << green << " "
-             << "B= " << blue << endl;
+        cout << "R= " << getRed() << " "
+             << "G= " << getGreen() << " "
+             << "B= " << getBlue() << endl;
     }
 };
 
